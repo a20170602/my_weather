@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气预报</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 系统显示框 -->
+
+        <div class="nav">
+            <div class="search">
+                <input type="text" placeholder="查找城市天气" />
+                <i class="search-btn"></i>
+            </div>
+        </div>
+
+        <div class="bg">
+            <div class="system"></div>
+            <div class="local">
+                <span class="local-city">
+                    <span class="city"></span>
+                    <i></i>
+                </span>
+
+            </div>
+
+            <div class="temperature-box">
+                <div class="temperature">
+                    <span class="temp"></span>
+                    <span>°C</span>
+                </div>
+                <div class="temperature-about">
+                    <p class="now"></p>
+                    <p>
+                        <span>空气质量</span>
+                        <span class="level"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather">
+            <div class="weather-nav">
+                <div class="today">
+                    <span>今天</span>
+                    <span class="day"></span>
+                </div>
+                <div>
+                    <p>
+                        <span class="tmp_min"></span>
+                        <i>/</i>
+                        <span class="tmp_max"></span>
+
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="weather-innerbox">
+                <div class="weather-list">
+                    <div class="weather-item">
+                        <div>0时</div>
+                        <div>
+                            <div class="weather-img">
+
+                            </div>
+                        </div>
+                        <div>晴</div>
+                        <div>10°C</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="forcase">
+            <canvas id="canvas" class="canvas"></canvas>
+            <div class="forcase-list">
+                <div class="forcase-item">
+                    <div class="item-t">
+                        <div>昨天</div>
+                        <div class="forcase-img"></div>
+                        <div>18°</div>
+                    </div>
+                    <div class="item-m"></div>
+                    <div class="item-b">
+                        <div class="forcase-img"></div>
+                        <div>16°</div>
+                    </div>
+
+                </div>
+                <div class="forcase-item">
+
+                </div>
+                <div class="forcase-item">
+
+                </div>
+                <div class="forcase-item">
+
+                </div>
+                <div class="forcase-item">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="now-about">
+
+            <div class="now-item">
+                <div class="now-img"></div>
+                <div class="now-item-msg">19°</div>
+                <div class="now-item-des">体感温度</div>
+            </div>
+
+        </div>
+        <div class="commont-title">生活指数</div>
+
+        <div class="life-about">
+            <div class="life-item">
+                <div class="life-img"></div>
+                <div class="life-item-msg">19°</div>
+                <div class="life-item-des">体感温度</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/setRem.js"></script>
+    <script src="./js/http.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/index.js"></script> -->
+
+</body>
+
+</html>
